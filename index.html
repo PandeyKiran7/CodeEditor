@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODE_EDITOR</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f5480437e8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- <button onclick="fetchTodo()">Load todo</button> -->
+    <div class="container">
+      <div class="left">
+        
+       <div class="left-box">
+         <label><i class="fa-brands fa-html5"></i> HTML</label>
+         <textarea id="html-code" onkeyup="run()"></textarea>
+    </div>
+
+       <div class="left-box">
+         <label> <i class="fa-brands fa-css3"></i>CSS</label>
+        <textarea id="css-code" onkeyup="run()" ></textarea>
+    </div>
+       <div class="left-box"> 
+        <label> <i class="fa-brands fa-js"></i>JavaScript</label>
+        <textarea id="js-code" onkeyup="run()"></textarea>
+    </div>
+</div>
+
+<div class="right">
+    <label ><i class="fa-solid fa-play"></i> Output</label>
+<iframe id="output">
+
+</iframe>
+</div>
+</div>
+  </body>
+  <script src="script.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+</html>
